@@ -3,57 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucy Wachu | Home</title>
+    <title>Lucy Wachu | Portfolio</title>
+    
+    <!-- Task 3.3: Correct Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    
+    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Task 4.1: Flexbox Navbar -->
     <header>
         <nav class="navbar">
             <div class="logo">Lucy Wachu</div>
             <ul class="nav-links">
+                <!-- Links match your actual file names -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="contacts.html">Contact</a></li>
+                <li><a href="contact-form.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!-- Task 4.3: Hero Section (Mobile-First) -->
         <section class="hero">
-            <h1>Hello, I'm Lucy Wachu</h1>
-            <p>A passionate web developer building responsive and beautiful websites.</p>
-            <button class="button">View My Work</button>
+            <div class="hero-content">
+                <h1>Hello, I'm Lucy Wachu</h1>
+                <p>A passionate web developer building responsive and beautiful websites.</p>
+                <a href="#projects" class="button primary">View My Work</a>
+            </div>
         </section>
 
-        <section class="projects">
-            <h2>Featured Projects</h2>
-            <div class="card-row">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x150" alt="Project 1">
-                    <h3>Portfolio Website</h3>
-                    <p>A responsive personal portfolio built using HTML and CSS.</p>
-                    <button class="button">View</button>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x150" alt="Project 2">
-                    <h3>Form Design</h3>
-                    <p>A styled and user-friendly contact form.</p>
-                    <button class="button">View</button>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/300x150" alt="Project 3">
-                    <h3>Landing Page</h3>
-                    <p>A clean and modern landing page design.</p>
-                    <button class="button">View</button>
-                </div>
+        <!-- Task 4.2: CSS Grid Projects Section -->
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1: Portfolio -->
+                <article class="project-card">
+                    <img src="./images/portfolio.png" alt="LWK Portfolio Preview">
+                    <div class="card-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive personal portfolio built using HTML and CSS.</p>
+                        <a href="portfolio.html" class="button secondary">View Project</a>
+                    </div>
+                </article>
+
+                <!-- Project 2: Contact Form -->
+                <article class="project-card">
+                    <img src="./images/contact-form.png" alt="LWK Contact Form Preview">
+                    <div class="card-content">
+                        <h3>Contact Form</h3>
+                        <p>A styled and user-friendly contact form with validation.</p>
+                        <a href="contact-form.html" class="button secondary">View Project</a>
+                    </div>
+                </article>
+
+                <!-- Project 3: Landing Page -->
+                <article class="project-card">
+                    <img src="./images/landing-page.png" alt="LWK Landing Page Preview">
+                    <div class="card-content">
+                        <h3>Landing Page</h3>
+                        <p>A clean and modern landing page design for businesses.</p>
+                        <a href="landing-page.html" class="button secondary">View Project</a>
+                    </div>
+                </article>
+
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>Contact: lucywachu77@gmail.com</p>
-        <p>&copy; 2026 Lucy Wachu</p>
+    <!-- Task 4.1: Footer Layout -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Email: <a href="mailto:lucywachu77@gmail.com">lucywachu77@gmail.com</a></p>
+            <p>&copy; 2026 Lucy Wachu | Built with LWK Design</p>
+        </div>
     </footer>
+
 </body>
 </html>
